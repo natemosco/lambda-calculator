@@ -14,7 +14,7 @@ const Operators = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
        {data.operators.map( (e,i)=> 
-       <OperatorButton key={index} operator={e}/>
+       <OperatorButton key={index} operatorSymbol={e}/>
        )}
        
     </div>
