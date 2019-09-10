@@ -17,7 +17,7 @@ const Numbers = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
        {data.numbers.map((currVal, index) =>{
-        <NumberButton key={index} number={currVal} />
+       return <NumberButton key={index} number={currVal} />
       })}
     </div>
   );
