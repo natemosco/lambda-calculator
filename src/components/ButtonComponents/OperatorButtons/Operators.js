@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import data from "../../../data"; // object includes {numbers, operators, specials}
 import {OperatorButton} from "./OperatorButton"
 //import any components needed
@@ -14,9 +14,10 @@ const Operators = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
        {data.operators.map( (e,i)=> 
-       <OperatorButton key={index} operatorSymbol={e}/>
+       <OperatorButton key={i} operatorSymbol={e}/>
        )}
        
     </div>
   );
 };
+export default Operators;
