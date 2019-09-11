@@ -1,0 +1,78 @@
+.container {
+    background-color: #c00025;
+    width: 100%;
+    width: 400px;
+    border-radius: 15px;
+    border: 2px solid grey;
+    padding-bottom: 25px;
+
+    .display {
+        margin-top: 25px;
+        height: 100px;
+        width: 350px;
+        border-radius: 50px;
+        color: white;
+        background-color: #322c2d;
+        box-shadow: 1px 1px #322c2d;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding:0 2%;
+        font-size: 5.0rem;
+    }
+    .App{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    section{
+        width: 100%;
+        display: flex;
+        padding-top: 2%;
+    }
+    .left{
+        width:75%;
+        .numberButtonContainer{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+        }
+        .numberButton{
+            width:60px;
+            height: 60px;
+            border-radius: 50%;
+            margin:5%;
+        }
+        .numberButton0{
+            width: 150px;
+            border-radius: 30px;
+        }
+        .specialButtonContainer{
+            display: flex;
+            justify-content: space-around;
+        }.specialButton{
+            width:60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+    }
+    .right{
+        width:25%;
+        height: 100%;
+        div{
+            height:100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .operatorButton{
+                width:60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+
+        }
+    }
+
+}
